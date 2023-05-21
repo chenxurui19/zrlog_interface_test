@@ -17,7 +17,7 @@ _log_path = project_path + os.sep + "log"
 _report_path = project_path + os.sep + "report"
 # 数据库信息配置
 DB_CONFIG = {
-    "host": "192.168.0.3",
+    "host": "192.168.0.5",
     "user": "root",
     "password": "123456",
     "database": "test",
