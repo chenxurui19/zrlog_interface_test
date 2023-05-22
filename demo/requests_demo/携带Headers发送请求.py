@@ -5,7 +5,7 @@
 # @Description :
 # 导入Request库
 import requests
-url_login = "http://192.168.0.5/api/admin/login"
+url_login = "http://192.168.0.3/api/admin/login"
 # 请求的数据为JSON格式的字符串，并将请求的数据保存在data字典中
 data = {
     "userName": "admin",

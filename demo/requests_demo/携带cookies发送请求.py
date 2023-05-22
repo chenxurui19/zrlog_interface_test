@@ -6,7 +6,7 @@
 # 导入Request库
 import requests
 # 此处使用的接口地址为Zrlog系统文章发布的接口地址
-url = "http://192.168.0.5/api/admin/article/create"
+url = "http://192.168.0.3/api/admin/article/create"
 # 请求的数据类型为JSON格式的字符串，并存放在字典当中
 data = {
     "id": None,

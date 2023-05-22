@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2023/5/21 22:57
+# @Author  : CXRui
+# @File    : docker-compose.yaml.py
+# @Description :
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+    ports:
+      - 33506:3306
+    volumes:
+      - ./zrlog.sql:/docker-entrypoint-initdb.d/zrlog.sql
+      - ./mysql-data:/var/lib/mysql
+
+  tomcat:
+    image: tomcat:9
+    restart: always
+    ports:
+      - 80:8080
+    volumes:
+      - ./ROOT.war:/usr/local/tomcat/webapps/ROOT.war
+
+  jenkins:
+    image: chenxurui/jenkins_python:1
+    restart: always
+    ports:
+      - 8888:8080

@@ -4,7 +4,7 @@
 # @File    : 发送一个Get请求.py
 # @Description :
 import requests
-url = "http://192.168.0.5/admin/login"
+url = "http://192.168.0.3/admin/login"
 # 通过Requests库发送Get请求
 r = requests.get(url=url)
 # 以文本的方式返回响应内容

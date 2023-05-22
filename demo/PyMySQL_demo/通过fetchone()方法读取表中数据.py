@@ -9,7 +9,7 @@ import pymysql
 
 db = pymysql.connect(
     # 设置数据库主机的地址
-    host="192.168.0.5",
+    host="192.168.0.3",
     # 设置数据库的用户名
     user="root",
     # 设置数据库的密码

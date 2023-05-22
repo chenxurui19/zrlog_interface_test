@@ -7,7 +7,7 @@
 # 导入Request库
 import requests
 # 此处使用的接口地址为zrlog系统后台登录的接口地址
-url_login = "http://192.168.0.5/api/admin/login"
+url_login = "http://192.168.0.3/api/admin/login"
 
 # 请求的数据为JSON格式的字符串
 data = {

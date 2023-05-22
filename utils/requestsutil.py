@@ -67,7 +67,7 @@ class RequestSend:
 
 
 if __name__ == '__main__':
-    url = "http://192.168.0.5/api/admin/login"
+    url = "http://192.168.0.3/api/admin/login"
     data = {"userName": "admin", "password": "c1d6d359fb2e2d0cba3ef62af63ffd8c", "https": False, "key": 1684427952551}
     method = "post"
     headers = {"Content-Type": "application/json"}
