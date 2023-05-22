@@ -6,7 +6,7 @@
 https://dockerdocs.cn/get-docker/
 
 https://dockerdocs.cn/get-started/08_using_compose/
-# 结果展示
+# 效果展示
 ![test_result.png](tutorial_screenshot%2Ftest_result.png)
 ## 服务端搭建
 命令行运行
@@ -46,3 +46,4 @@ cat ~/.ssh/id_rsa.pub
 ![image_2.png](tutorial_screenshot%2Fimage_3.png)
 ![image_4.png](tutorial_screenshot%2Fimage_4.png)
 ![image_5.png](tutorial_screenshot%2Fimage_5.png)
+![image_6.png](tutorial_screenshot%2Fimage_6.png)
