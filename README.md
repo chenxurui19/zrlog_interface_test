@@ -6,6 +6,8 @@
 https://dockerdocs.cn/get-docker/
 
 https://dockerdocs.cn/get-started/08_using_compose/
+# 结果展示
+![test_result.png](tutorial_screenshot%2Ftest_result.png)
 ## 服务端搭建
 命令行运行
 ```
@@ -27,3 +29,20 @@ docker-compose up -d
 ```angular2html
 pip install -r requirements.txt
 ```
+## 配合Git，接入Jenkins实现持续集成
+进入Jenkins容器，输入以下命令，生成ssh密钥
+```angular2html
+ssh-keygen
+```
+查看生成ssh公钥，并添加到github
+```angular2html
+cat ~/.ssh/id_rsa.pub
+```
+查看并复制ssh私钥，登录Jenkins平台，通过Manage Jenkins选项找到"添加凭据"选项，并把刚刚复制的私钥内容粘贴到Enter directly输入框中保存，如下图所示。
+![image_1.png](tutorial_screenshot%2Fimage_1.png)
+安装HTML Publisher,用于查看报告
+![image_2.png](tutorial_screenshot%2Fimage_2.png)
+添加一个Freestyle project的item，并且做如下配置，保存后就可以执行自动化测试
+![image_2.png](tutorial_screenshot%2Fimage_3.png)
+![image_4.png](tutorial_screenshot%2Fimage_4.png)
+![image_5.png](tutorial_screenshot%2Fimage_5.png)
